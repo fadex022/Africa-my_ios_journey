@@ -45,6 +45,7 @@
 		52FA12D4281DBBB000795525 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA12D3281DBBB000795525 /* VideoPlayerView.swift */; };
 		52FA12D7281DBDB300795525 /* VideoPlayerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA12D6281DBDB300795525 /* VideoPlayerUtil.swift */; };
 		52FA12D9281DC51E00795525 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA12D8281DC51E00795525 /* LocationModel.swift */; };
+		52FA12DB281DCECA00795525 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FA12DA281DCECA00795525 /* MapAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		52FA12D3281DBBB000795525 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		52FA12D6281DBDB300795525 /* VideoPlayerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerUtil.swift; sourceTree = "<group>"; };
 		52FA12D8281DC51E00795525 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		52FA12DA281DCECA00795525 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 				52FA12CB281D9BF800795525 /* ExternalWeblinkView.swift */,
 				52FA12D1281DADBC00795525 /* VideoListItemView.swift */,
 				52FA12D3281DBBB000795525 /* VideoPlayerView.swift */,
+				52FA12DA281DCECA00795525 /* MapAnnotationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				52FA12CA281D928500795525 /* InsetMapView.swift in Sources */,
 				524653C1281B252E00E5A64E /* MapView.swift in Sources */,
 				52465390281B18AF00E5A64E /* AfricaApp.swift in Sources */,
+				52FA12DB281DCECA00795525 /* MapAnnotationView.swift in Sources */,
 				52FA12D7281DBDB300795525 /* VideoPlayerUtil.swift in Sources */,
 				52FA12D0281DAC7E00795525 /* VideoModel.swift in Sources */,
 				524653BF281B233500E5A64E /* VideoListView.swift in Sources */,
