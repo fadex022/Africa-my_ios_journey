@@ -9,7 +9,13 @@ import SwiftUI
 
 struct GalleryView: View {
     var body: some View {
-        Text("Gallery")
+        ScrollView {
+            Text("Gallery")
+        }//: SCROll
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(
+            MotionAnnimationView()
+        )
     }
 }
 
