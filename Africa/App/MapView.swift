@@ -31,13 +31,60 @@ struct MapView: View {
             
             // CUSTOM MAKER ANNOTATION
             
+//            MapAnnotation(coordinate: item.location) {
+//                Image("logo")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 32, height: 32)
+//            }
+            
             MapAnnotation(coordinate: item.location) {
-                Image("logo")
+                MapAnnotationView(location: item)
+            }
+        }//: MAP
+        .overlay(
+            HStack(alignment: .center, spacing: 12) {
+                Image("compass")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 32, height: 32)
-            }
-        }
+                    .frame(width: 48, height: 48, alignment: .center)
+                
+                VStack(alignment: .leading, spacing: 3) {
+                    HStack{
+                        Text("Latitude")
+                            .font(.footnote)
+                            .foregroundColor(.accentColor)
+                            .fontWeight(.bold)
+                        Spacer()
+                        Text("\(region.center.latitude)")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                    }//: HSTACK
+                    
+                    Divider()
+                    
+                    HStack{
+                        Text("Longitude")
+                            .font(.footnote)
+                            .foregroundColor(.accentColor)
+                            .fontWeight(.bold)
+                        Spacer()
+                        Text("\(region.center.longitude)")
+                            .font(.footnote)
+                            .fontWeight(.bold)
+                    }//: HSTACK
+                }
+            }//: HSTACK
+                .padding(.vertical, 12)
+                .padding(.horizontal, 14)
+                .background(
+                    Color.black
+                        .opacity(0.6)
+                        .cornerRadius(9)
+                )
+                .padding()
+            , alignment: .top
+        )
             
     }
 }
